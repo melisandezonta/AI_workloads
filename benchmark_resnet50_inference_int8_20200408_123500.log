@@ -1,0 +1,280 @@
+WARNING:tensorflow:From /root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py:152: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
+WARNING:tensorflow:From /root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py:167: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py:156: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/tools/strip_unused_lib.py:88: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/tools/optimize_for_inference_lib.py:117: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.remove_training_nodes`
+
+User settings:
+
+   KMP_AFFINITY=granularity=fine,verbose,compact,1,0
+   KMP_BLOCKTIME=1
+   KMP_SETTINGS=1
+   OMP_NUM_THREADS=56
+
+Effective settings:
+
+   KMP_ABORT_DELAY=0
+   KMP_ADAPTIVE_LOCK_PROPS='1,1024'
+   KMP_ALIGN_ALLOC=64
+   KMP_ALL_THREADPRIVATE=224
+   KMP_ATOMIC_MODE=2
+   KMP_BLOCKTIME=1
+   KMP_CPUINFO_FILE: value is not defined
+   KMP_DETERMINISTIC_REDUCTION=false
+   KMP_DEVICE_THREAD_LIMIT=2147483647
+   KMP_DISP_HAND_THREAD=false
+   KMP_DISP_NUM_BUFFERS=7
+   KMP_DUPLICATE_LIB_OK=false
+   KMP_FORCE_REDUCTION: value is not defined
+   KMP_FOREIGN_THREADS_THREADPRIVATE=true
+   KMP_FORKJOIN_BARRIER='2,2'
+   KMP_FORKJOIN_BARRIER_PATTERN='hyper,hyper'
+   KMP_FORKJOIN_FRAMES=true
+   KMP_FORKJOIN_FRAMES_MODE=3
+   KMP_GTID_MODE=3
+   KMP_HANDLE_SIGNALS=false
+   KMP_HOT_TEAMS_MAX_LEVEL=1
+   KMP_HOT_TEAMS_MODE=0
+   KMP_INIT_AT_FORK=true
+   KMP_ITT_PREPARE_DELAY=0
+   KMP_LIBRARY=throughput
+   KMP_LOCK_KIND=queuing
+   KMP_MALLOC_POOL_INCR=1M
+   KMP_MWAIT_HINTS=0
+   KMP_NUM_LOCKS_IN_BLOCK=1
+   KMP_PLAIN_BARRIER='2,2'
+   KMP_PLAIN_BARRIER_PATTERN='hyper,hyper'
+   KMP_REDUCTION_BARRIER='1,1'
+   KMP_REDUCTION_BARRIER_PATTERN='hyper,hyper'
+   KMP_SCHEDULE='static,balanced;guided,iterative'
+   KMP_SETTINGS=true
+   KMP_SPIN_BACKOFF_PARAMS='4096,100'
+   KMP_STACKOFFSET=64
+   KMP_STACKPAD=0
+   KMP_STACKSIZE=8M
+   KMP_STORAGE_MAP=false
+   KMP_TASKING=2
+   KMP_TASKLOOP_MIN_TASKS=0
+   KMP_TASK_STEALING_CONSTRAINT=1
+   KMP_TEAMS_THREAD_LIMIT=56
+   KMP_TOPOLOGY_METHOD=all
+   KMP_USER_LEVEL_MWAIT=false
+   KMP_USE_YIELD=1
+   KMP_VERSION=false
+   KMP_WARNINGS=true
+   OMP_AFFINITY_FORMAT='OMP: pid %P tid %i thread %n bound to OS proc set {%A}'
+   OMP_ALLOCATOR=omp_default_mem_alloc
+   OMP_CANCELLATION=false
+   OMP_DEBUG=disabled
+   OMP_DEFAULT_DEVICE=0
+   OMP_DISPLAY_AFFINITY=false
+   OMP_DISPLAY_ENV=false
+   OMP_DYNAMIC=false
+   OMP_MAX_ACTIVE_LEVELS=2147483647
+   OMP_MAX_TASK_PRIORITY=0
+   OMP_NESTED=false
+   OMP_NUM_THREADS='56'
+   OMP_PLACES: value is not defined
+   OMP_PROC_BIND='intel'
+   OMP_SCHEDULE='static'
+   OMP_STACKSIZE=8M
+   OMP_TARGET_OFFLOAD=DEFAULT
+   OMP_THREAD_LIMIT=2147483647
+   OMP_TOOL=enabled
+   OMP_TOOL_LIBRARIES: value is not defined
+   OMP_WAIT_POLICY=PASSIVE
+   KMP_AFFINITY='verbose,warnings,respect,granularity=fine,compact,1,0'
+
+2020-04-08 12:35:07.475786: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 1675000000 Hz
+2020-04-08 12:35:07.477637: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x378bec0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-08 12:35:07.477669: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-55
+OMP: Info #156: KMP_AFFINITY: 56 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 1 packages x 56 cores/pkg x 1 threads/core (56 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 core 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 0 core 2 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 3 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to package 0 core 4 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to package 0 core 5 
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to package 0 core 6 
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to package 0 core 7 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to package 0 core 8 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to package 0 core 9 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to package 0 core 10 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to package 0 core 11 
+OMP: Info #171: KMP_AFFINITY: OS proc 12 maps to package 0 core 12 
+OMP: Info #171: KMP_AFFINITY: OS proc 13 maps to package 0 core 13 
+OMP: Info #171: KMP_AFFINITY: OS proc 14 maps to package 0 core 14 
+OMP: Info #171: KMP_AFFINITY: OS proc 15 maps to package 0 core 15 
+OMP: Info #171: KMP_AFFINITY: OS proc 16 maps to package 0 core 16 
+OMP: Info #171: KMP_AFFINITY: OS proc 17 maps to package 0 core 17 
+OMP: Info #171: KMP_AFFINITY: OS proc 18 maps to package 0 core 18 
+OMP: Info #171: KMP_AFFINITY: OS proc 19 maps to package 0 core 19 
+OMP: Info #171: KMP_AFFINITY: OS proc 20 maps to package 0 core 20 
+OMP: Info #171: KMP_AFFINITY: OS proc 21 maps to package 0 core 21 
+OMP: Info #171: KMP_AFFINITY: OS proc 22 maps to package 0 core 22 
+OMP: Info #171: KMP_AFFINITY: OS proc 23 maps to package 0 core 23 
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to package 0 core 24 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to package 0 core 25 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to package 0 core 26 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to package 0 core 27 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to package 0 core 28 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to package 0 core 29 
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to package 0 core 30 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to package 0 core 31 
+OMP: Info #171: KMP_AFFINITY: OS proc 32 maps to package 0 core 32 
+OMP: Info #171: KMP_AFFINITY: OS proc 33 maps to package 0 core 33 
+OMP: Info #171: KMP_AFFINITY: OS proc 34 maps to package 0 core 34 
+OMP: Info #171: KMP_AFFINITY: OS proc 35 maps to package 0 core 35 
+OMP: Info #171: KMP_AFFINITY: OS proc 36 maps to package 0 core 36 
+OMP: Info #171: KMP_AFFINITY: OS proc 37 maps to package 0 core 37 
+OMP: Info #171: KMP_AFFINITY: OS proc 38 maps to package 0 core 38 
+OMP: Info #171: KMP_AFFINITY: OS proc 39 maps to package 0 core 39 
+OMP: Info #171: KMP_AFFINITY: OS proc 40 maps to package 0 core 40 
+OMP: Info #171: KMP_AFFINITY: OS proc 41 maps to package 0 core 41 
+OMP: Info #171: KMP_AFFINITY: OS proc 42 maps to package 0 core 42 
+OMP: Info #171: KMP_AFFINITY: OS proc 43 maps to package 0 core 43 
+OMP: Info #171: KMP_AFFINITY: OS proc 44 maps to package 0 core 44 
+OMP: Info #171: KMP_AFFINITY: OS proc 45 maps to package 0 core 45 
+OMP: Info #171: KMP_AFFINITY: OS proc 46 maps to package 0 core 46 
+OMP: Info #171: KMP_AFFINITY: OS proc 47 maps to package 0 core 47 
+OMP: Info #171: KMP_AFFINITY: OS proc 48 maps to package 0 core 48 
+OMP: Info #171: KMP_AFFINITY: OS proc 49 maps to package 0 core 49 
+OMP: Info #171: KMP_AFFINITY: OS proc 50 maps to package 0 core 50 
+OMP: Info #171: KMP_AFFINITY: OS proc 51 maps to package 0 core 51 
+OMP: Info #171: KMP_AFFINITY: OS proc 52 maps to package 0 core 52 
+OMP: Info #171: KMP_AFFINITY: OS proc 53 maps to package 0 core 53 
+OMP: Info #171: KMP_AFFINITY: OS proc 54 maps to package 0 core 54 
+OMP: Info #171: KMP_AFFINITY: OS proc 55 maps to package 0 core 55 
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 175 thread 0 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 175 thread 1 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 175 thread 2 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1335 thread 3 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1336 thread 4 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1337 thread 5 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1338 thread 6 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1339 thread 7 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1340 thread 8 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1343 thread 11 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1344 thread 12 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1341 thread 9 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1345 thread 13 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1342 thread 10 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1346 thread 14 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1347 thread 15 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1348 thread 16 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1349 thread 17 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1350 thread 18 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1351 thread 19 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1353 thread 21 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1354 thread 22 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1355 thread 23 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1356 thread 24 bound to OS proc set 24
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1357 thread 25 bound to OS proc set 25
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1358 thread 26 bound to OS proc set 26
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1359 thread 27 bound to OS proc set 27
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1360 thread 28 bound to OS proc set 28
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1361 thread 29 bound to OS proc set 29
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1362 thread 30 bound to OS proc set 30
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1363 thread 31 bound to OS proc set 31
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1364 thread 32 bound to OS proc set 32
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1365 thread 33 bound to OS proc set 33
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1366 thread 34 bound to OS proc set 34
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1367 thread 35 bound to OS proc set 35
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1368 thread 36 bound to OS proc set 36
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1369 thread 37 bound to OS proc set 37
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1370 thread 38 bound to OS proc set 38
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1372 thread 40 bound to OS proc set 40
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1371 thread 39 bound to OS proc set 39
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1373 thread 41 bound to OS proc set 41
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1352 thread 20 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1375 thread 43 bound to OS proc set 43
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1374 thread 42 bound to OS proc set 42
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1376 thread 44 bound to OS proc set 44
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1377 thread 45 bound to OS proc set 45
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1378 thread 46 bound to OS proc set 46
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1380 thread 48 bound to OS proc set 48
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1379 thread 47 bound to OS proc set 47
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1381 thread 49 bound to OS proc set 49
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1382 thread 50 bound to OS proc set 50
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1383 thread 51 bound to OS proc set 51
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1384 thread 52 bound to OS proc set 52
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1385 thread 53 bound to OS proc set 53
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1386 thread 54 bound to OS proc set 54
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1387 thread 55 bound to OS proc set 55
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1389 thread 57 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 1388 thread 56 bound to OS proc set 0
+Run inference
+Inference with real data.
+Iteration 1: 5.937890 sec
+Iteration 2: 0.247396 sec
+Iteration 3: 0.216608 sec
+Iteration 4: 0.233931 sec
+Iteration 5: 0.160074 sec
+Iteration 6: 0.178975 sec
+Iteration 7: 0.174775 sec
+Iteration 8: 0.266274 sec
+Iteration 9: 0.282865 sec
+Iteration 10: 0.211375 sec
+Iteration 11: 0.164963 sec
+Iteration 12: 0.171875 sec
+Iteration 13: 0.271574 sec
+Iteration 14: 0.185974 sec
+Iteration 15: 0.190074 sec
+Iteration 16: 0.266306 sec
+Iteration 17: 0.207143 sec
+Iteration 18: 0.237775 sec
+Iteration 19: 0.177674 sec
+Iteration 20: 0.261481 sec
+Iteration 21: 0.187779 sec
+Iteration 22: 0.272074 sec
+Iteration 23: 0.184647 sec
+Iteration 24: 0.159902 sec
+Iteration 25: 0.143275 sec
+Iteration 26: 0.317663 sec
+Iteration 27: 0.177474 sec
+Iteration 28: 0.193275 sec
+Iteration 29: 0.293474 sec
+Iteration 30: 0.196675 sec
+Iteration 31: 0.229474 sec
+Iteration 32: 0.202796 sec
+Iteration 33: 0.257553 sec
+Iteration 34: 0.258431 sec
+Iteration 35: 0.257717 sec
+Iteration 36: 0.330251 sec
+Iteration 37: 0.237197 sec
+Iteration 38: 0.279074 sec
+Iteration 39: 0.246892 sec
+Iteration 40: 0.203075 sec
+Iteration 41: 0.259474 sec
+Iteration 42: 0.253274 sec
+Iteration 43: 0.218174 sec
+Iteration 44: 0.246974 sec
+Iteration 45: 0.233174 sec
+Iteration 46: 0.144774 sec
+Iteration 47: 0.170532 sec
+Iteration 48: 0.184586 sec
+Iteration 49: 0.174993 sec
+Iteration 50: 0.182567 sec
+Average time: 0.220801 sec
+Batch size = 1
+Latency: 220.801 ms
+Throughput: 4.529 images/sec
+Warning: Unable to find the TCMalloc library file (libtcmalloc.so) in /usr/lib or /usr/lib64, so the LD_PRELOAD environment variable will not be set.
+Ran inference with batch size 1
+Log location outside container: ./benchmark_resnet50_inference_int8_20200408_123500.log
