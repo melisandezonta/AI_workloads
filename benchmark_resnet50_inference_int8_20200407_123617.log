@@ -1,0 +1,169 @@
+WARNING:tensorflow:From /root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py:156: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/tools/strip_unused_lib.py:88: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/tools/optimize_for_inference_lib.py:117: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.remove_training_nodes`
+
+User settings:
+
+   KMP_AFFINITY=granularity=fine,verbose,compact,1,0
+   KMP_BLOCKTIME=1
+   KMP_SETTINGS=1
+   OMP_NUM_THREADS=4
+
+Effective settings:
+
+   KMP_ABORT_DELAY=0
+   KMP_ADAPTIVE_LOCK_PROPS='1,1024'
+   KMP_ALIGN_ALLOC=64
+   KMP_ALL_THREADPRIVATE=128
+   KMP_ATOMIC_MODE=2
+   KMP_BLOCKTIME=1
+   KMP_CPUINFO_FILE: value is not defined
+   KMP_DETERMINISTIC_REDUCTION=false
+   KMP_DEVICE_THREAD_LIMIT=2147483647
+   KMP_DISP_HAND_THREAD=false
+   KMP_DISP_NUM_BUFFERS=7
+   KMP_DUPLICATE_LIB_OK=false
+   KMP_FORCE_REDUCTION: value is not defined
+   KMP_FOREIGN_THREADS_THREADPRIVATE=true
+   KMP_FORKJOIN_BARRIER='2,2'
+   KMP_FORKJOIN_BARRIER_PATTERN='hyper,hyper'
+   KMP_FORKJOIN_FRAMES=true
+   KMP_FORKJOIN_FRAMES_MODE=3
+   KMP_GTID_MODE=3
+   KMP_HANDLE_SIGNALS=false
+   KMP_HOT_TEAMS_MAX_LEVEL=1
+   KMP_HOT_TEAMS_MODE=0
+   KMP_INIT_AT_FORK=true
+   KMP_ITT_PREPARE_DELAY=0
+   KMP_LIBRARY=throughput
+   KMP_LOCK_KIND=queuing
+   KMP_MALLOC_POOL_INCR=1M
+   KMP_MWAIT_HINTS=0
+   KMP_NUM_LOCKS_IN_BLOCK=1
+   KMP_PLAIN_BARRIER='2,2'
+   KMP_PLAIN_BARRIER_PATTERN='hyper,hyper'
+   KMP_REDUCTION_BARRIER='1,1'
+   KMP_REDUCTION_BARRIER_PATTERN='hyper,hyper'
+   KMP_SCHEDULE='static,balanced;guided,iterative'
+   KMP_SETTINGS=true
+   KMP_SPIN_BACKOFF_PARAMS='4096,100'
+   KMP_STACKOFFSET=64
+   KMP_STACKPAD=0
+   KMP_STACKSIZE=8M
+   KMP_STORAGE_MAP=false
+   KMP_TASKING=2
+   KMP_TASKLOOP_MIN_TASKS=0
+   KMP_TASK_STEALING_CONSTRAINT=1
+   KMP_TEAMS_THREAD_LIMIT=4
+   KMP_TOPOLOGY_METHOD=all
+   KMP_USER_LEVEL_MWAIT=false
+   KMP_USE_YIELD=1
+   KMP_VERSION=false
+   KMP_WARNINGS=true
+   OMP_AFFINITY_FORMAT='OMP: pid %P tid %i thread %n bound to OS proc set {%A}'
+   OMP_ALLOCATOR=omp_default_mem_alloc
+   OMP_CANCELLATION=false
+   OMP_DEBUG=disabled
+   OMP_DEFAULT_DEVICE=0
+   OMP_DISPLAY_AFFINITY=false
+   OMP_DISPLAY_ENV=false
+   OMP_DYNAMIC=false
+   OMP_MAX_ACTIVE_LEVELS=2147483647
+   OMP_MAX_TASK_PRIORITY=0
+   OMP_NESTED=false
+   OMP_NUM_THREADS='4'
+   OMP_PLACES: value is not defined
+   OMP_PROC_BIND='intel'
+   OMP_SCHEDULE='static'
+   OMP_STACKSIZE=8M
+   OMP_TARGET_OFFLOAD=DEFAULT
+   OMP_THREAD_LIMIT=2147483647
+   OMP_TOOL=enabled
+   OMP_TOOL_LIBRARIES: value is not defined
+   OMP_WAIT_POLICY=PASSIVE
+   KMP_AFFINITY='verbose,warnings,respect,granularity=fine,compact,1,0'
+
+2020-04-07 12:36:21.543051: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 1675000000 Hz
+2020-04-07 12:36:21.544994: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x583ef30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-07 12:36:21.545043: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-3
+OMP: Info #156: KMP_AFFINITY: 4 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 1 packages x 4 cores/pkg x 1 threads/core (4 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 core 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 0 core 2 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 3 
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 115 thread 0 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 115 thread 1 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 117 thread 2 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 118 thread 3 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 41 tid 119 thread 4 bound to OS proc set 0
+Run inference
+Inference with dummy data.
+Iteration 1: 0.959256 sec
+Iteration 2: 0.025540 sec
+Iteration 3: 0.025958 sec
+Iteration 4: 0.025983 sec
+Iteration 5: 0.025551 sec
+Iteration 6: 0.026005 sec
+Iteration 7: 0.026370 sec
+Iteration 8: 0.025581 sec
+Iteration 9: 0.025760 sec
+Iteration 10: 0.026882 sec
+Iteration 11: 0.025835 sec
+Iteration 12: 0.026151 sec
+Iteration 13: 0.025547 sec
+Iteration 14: 0.025759 sec
+Iteration 15: 0.025495 sec
+Iteration 16: 0.026144 sec
+Iteration 17: 0.026186 sec
+Iteration 18: 0.025994 sec
+Iteration 19: 0.026082 sec
+Iteration 20: 0.025797 sec
+Iteration 21: 0.025753 sec
+Iteration 22: 0.025550 sec
+Iteration 23: 0.026458 sec
+Iteration 24: 0.025600 sec
+Iteration 25: 0.025816 sec
+Iteration 26: 0.025809 sec
+Iteration 27: 0.027075 sec
+Iteration 28: 0.025477 sec
+Iteration 29: 0.026965 sec
+Iteration 30: 0.025987 sec
+Iteration 31: 0.025782 sec
+Iteration 32: 0.026072 sec
+Iteration 33: 0.025941 sec
+Iteration 34: 0.025697 sec
+Iteration 35: 0.025596 sec
+Iteration 36: 0.026133 sec
+Iteration 37: 0.026372 sec
+Iteration 38: 0.025878 sec
+Iteration 39: 0.026480 sec
+Iteration 40: 0.025382 sec
+Iteration 41: 0.025370 sec
+Iteration 42: 0.026451 sec
+Iteration 43: 0.026060 sec
+Iteration 44: 0.026061 sec
+Iteration 45: 0.025825 sec
+Iteration 46: 0.025504 sec
+Iteration 47: 0.025062 sec
+Iteration 48: 0.025301 sec
+Iteration 49: 0.025810 sec
+Iteration 50: 0.025431 sec
+Average time: 0.025892 sec
+Batch size = 1
+Latency: 25.892 ms
+Throughput: 38.622 images/sec
+Warning: Unable to find the TCMalloc library file (libtcmalloc.so) in /usr/lib or /usr/lib64, so the LD_PRELOAD environment variable will not be set.
+Ran inference with batch size 1
+Log location outside container: ./benchmark_resnet50_inference_int8_20200407_123617.log
