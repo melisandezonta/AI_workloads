@@ -1,0 +1,13 @@
+Run inference
+Inference with real data.
+Traceback (most recent call last):
+  File "/root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py", line 271, in <module>
+    evaluate_opt_graph.run()
+  File "/root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py", line 142, in run
+    images, labels, filenames = preprocessor.minibatch(dataset, subset=subset)
+  File "/root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py", line 145, in minibatch
+    .format(glob_pattern))
+ValueError: Found no files in --data_dir matching: ../../Imagenet/images/validation-*-of-*
+Warning: Unable to find the TCMalloc library file (libtcmalloc.so) in /usr/lib or /usr/lib64, so the LD_PRELOAD environment variable will not be set.
+Ran inference with batch size 1
+Log location outside container: ./benchmark_resnet50_inference_int8_20200411_173002.log

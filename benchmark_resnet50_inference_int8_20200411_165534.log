@@ -1,0 +1,155 @@
+WARNING:tensorflow:From /root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py:152: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
+WARNING:tensorflow:From /root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py:167: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py:156: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/tools/strip_unused_lib.py:88: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/tools/optimize_for_inference_lib.py:117: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.remove_training_nodes`
+
+User settings:
+
+   KMP_AFFINITY=granularity=fine,verbose,compact,1,0
+   KMP_BLOCKTIME=1
+   KMP_SETTINGS=1
+   OMP_NUM_THREADS=4
+
+Effective settings:
+
+   KMP_ABORT_DELAY=0
+   KMP_ADAPTIVE_LOCK_PROPS='1,1024'
+   KMP_ALIGN_ALLOC=64
+   KMP_ALL_THREADPRIVATE=128
+   KMP_ATOMIC_MODE=2
+   KMP_BLOCKTIME=1
+   KMP_CPUINFO_FILE: value is not defined
+   KMP_DETERMINISTIC_REDUCTION=false
+   KMP_DEVICE_THREAD_LIMIT=2147483647
+   KMP_DISP_HAND_THREAD=false
+   KMP_DISP_NUM_BUFFERS=7
+   KMP_DUPLICATE_LIB_OK=false
+   KMP_FORCE_REDUCTION: value is not defined
+   KMP_FOREIGN_THREADS_THREADPRIVATE=true
+   KMP_FORKJOIN_BARRIER='2,2'
+   KMP_FORKJOIN_BARRIER_PATTERN='hyper,hyper'
+   KMP_FORKJOIN_FRAMES=true
+   KMP_FORKJOIN_FRAMES_MODE=3
+   KMP_GTID_MODE=3
+   KMP_HANDLE_SIGNALS=false
+   KMP_HOT_TEAMS_MAX_LEVEL=1
+   KMP_HOT_TEAMS_MODE=0
+   KMP_INIT_AT_FORK=true
+   KMP_ITT_PREPARE_DELAY=0
+   KMP_LIBRARY=throughput
+   KMP_LOCK_KIND=queuing
+   KMP_MALLOC_POOL_INCR=1M
+   KMP_MWAIT_HINTS=0
+   KMP_NUM_LOCKS_IN_BLOCK=1
+   KMP_PLAIN_BARRIER='2,2'
+   KMP_PLAIN_BARRIER_PATTERN='hyper,hyper'
+   KMP_REDUCTION_BARRIER='1,1'
+   KMP_REDUCTION_BARRIER_PATTERN='hyper,hyper'
+   KMP_SCHEDULE='static,balanced;guided,iterative'
+   KMP_SETTINGS=true
+   KMP_SPIN_BACKOFF_PARAMS='4096,100'
+   KMP_STACKOFFSET=64
+   KMP_STACKPAD=0
+   KMP_STACKSIZE=8M
+   KMP_STORAGE_MAP=false
+   KMP_TASKING=2
+   KMP_TASKLOOP_MIN_TASKS=0
+   KMP_TASK_STEALING_CONSTRAINT=1
+   KMP_TEAMS_THREAD_LIMIT=4
+   KMP_TOPOLOGY_METHOD=all
+   KMP_USER_LEVEL_MWAIT=false
+   KMP_USE_YIELD=1
+   KMP_VERSION=false
+   KMP_WARNINGS=true
+   OMP_AFFINITY_FORMAT='OMP: pid %P tid %i thread %n bound to OS proc set {%A}'
+   OMP_ALLOCATOR=omp_default_mem_alloc
+   OMP_CANCELLATION=false
+   OMP_DEBUG=disabled
+   OMP_DEFAULT_DEVICE=0
+   OMP_DISPLAY_AFFINITY=false
+   OMP_DISPLAY_ENV=false
+   OMP_DYNAMIC=false
+   OMP_MAX_ACTIVE_LEVELS=2147483647
+   OMP_MAX_TASK_PRIORITY=0
+   OMP_NESTED=false
+   OMP_NUM_THREADS='4'
+   OMP_PLACES: value is not defined
+   OMP_PROC_BIND='intel'
+   OMP_SCHEDULE='static'
+   OMP_STACKSIZE=8M
+   OMP_TARGET_OFFLOAD=DEFAULT
+   OMP_THREAD_LIMIT=2147483647
+   OMP_TOOL=enabled
+   OMP_TOOL_LIBRARIES: value is not defined
+   OMP_WAIT_POLICY=PASSIVE
+   KMP_AFFINITY='verbose,warnings,respect,granularity=fine,compact,1,0'
+
+2020-04-11 16:55:40.347987: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 1675000000 Hz
+2020-04-11 16:55:40.349894: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x168d060 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-11 16:55:40.349933: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Run inference
+Inference with real data.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1365, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1350, in _run_fn
+    target_list, run_metadata)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1443, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.DataLossError: corrupted record at 0
+	 [[{{node batch_processing/IteratorGetNext}}]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py", line 271, in <module>
+    evaluate_opt_graph.run()
+  File "/root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py", line 189, in run
+    image_np = data_sess.run(images)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 958, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1181, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1359, in _do_run
+    run_metadata)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1384, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.DataLossError: corrupted record at 0
+	 [[node batch_processing/IteratorGetNext (defined at root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py:172) ]]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node batch_processing/IteratorGetNext:
+ batch_processing/OneShotIterator (defined at root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py:171)
+
+Original stack trace for 'batch_processing/IteratorGetNext':
+  File "root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py", line 271, in <module>
+    evaluate_opt_graph.run()
+  File "root/models/benchmarks/../models/image_recognition/tensorflow/resnet50/inference/eval_image_classifier_inference.py", line 142, in run
+    images, labels, filenames = preprocessor.minibatch(dataset, subset=subset)
+  File "root/models/models/image_recognition/tensorflow/resnet50/inference/preprocessing.py", line 172, in minibatch
+    images, labels, filename = ds_iterator.get_next()
+  File "usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/iterator_ops.py", line 427, in get_next
+    name=name)
+  File "usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/gen_dataset_ops.py", line 2325, in iterator_get_next
+    output_shapes=output_shapes, name=name)
+  File "usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/op_def_library.py", line 744, in _apply_op_helper
+    attrs=attr_protos, op_def=op_def)
+  File "usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 3327, in _create_op_internal
+    op_def=op_def)
+  File "usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/ops.py", line 1791, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Warning: Unable to find the TCMalloc library file (libtcmalloc.so) in /usr/lib or /usr/lib64, so the LD_PRELOAD environment variable will not be set.
+Ran inference with batch size 1
+Log location outside container: ./benchmark_resnet50_inference_int8_20200411_165534.log
